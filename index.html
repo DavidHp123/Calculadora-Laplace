@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CALCULADORA DE LAPLACE
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+	
+<form id="datos" name="" method="post">
+	
+	<button onclick="limpiar();" class="btn btn-danger">Limpiar campos</button>
+	<br>
+	<br>
+	<label>Funcion a(R)</label>
+	<input type="text" name="" id="valor" autofocus placeholder="Escriba a">
+	<button type="button" onclick="resultado();" class="btn btn-success">Resultado</button> 
+	
+	<br>
+
+<label >Funcion t^n</label>
+<input type="text" name="" id="valor2" placeholder="Escriba n">
+<button type="button" onclick="resultado2();" class="btn btn-success">Resultado</button> 
+	<br>
+
+<label>Funcion e^at</label>
+<input type="text" name="" id="valor3" placeholder="Escriba a">
+<button type="button" onclick="resultado3();" class="btn btn-success">Resultado</button> 
+<br>
+
+<label>Funcion Sen at</label>
+<input type="text" name="" id="valor4" placeholder="Escriba a">
+<button type="button" onclick="resultado4();" class="btn btn-success">Resultado</button>
+<br>
+
+<label>Funcion Cos at</label>
+<input type="text" name="" id="valor5" placeholder="Escriba a">
+<button type="button" onclick="resultado5();" class="btn btn-success">Resultado</button>
+<br>
+
+<label>Funcion t^n e^at</label>
+<input type="text" name="" id="valor6" placeholder="Escriba n">
+<input type="text" name="" id="valor7" placeholder="Escriba a">
+<button type="button" onclick="resultado6();" class="btn btn-success">Resultado</button>
+<br>
+
+<label>Funcion e^at Sen bt</label>
+<input type="text" name="" id="valor8" placeholder="Escriba a">
+<input type="text" name="" id="valor9" placeholder="Escriba b">
+<button type="button" onclick="resultado7();" class="btn btn-success">Resultado</button>
+<br>
+
+<label>Funcion e^at Cos bt</label>
+<input type="text" name="" id="valor10" placeholder="Escriba a">
+<input type="text" name="" id="valor11" placeholder="Escriba b">
+<button type="button" onclick="resultado8();" class="btn btn-success">Resultado</button>
+<br>
+
+<br>
+<p> El resultado es: <span id="respuesta"></span>
+
+</form>
+
+	<script type="text/javascript" src="funciones.js">	
+	</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
